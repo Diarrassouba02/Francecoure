@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'bootstrap/css.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="top">
+        <div class="inx">
+           <div class="in">
+               <h1> <a href="index.php"><img src="img/logo.png" alt=""> <br></a> </h1>
+               <div class="menu">
+                   <a href="index.php" style="background-color: white;">Accueil</a>
+                   <a href="acces_prono.php">Pronostics</a>
+                   <a href="abonnement.php">Abonnement</a>
+                   <a href="archive.php">Archives</a>
+                   <a href="contact.php">Contact</a>
+               </div>
+           </div>
+       </div>
+    </div>
+    <div class="sep"></div>
+    <div class="content">
+        <div class="inx">
+            <div class="in">
+                <div class="pan_left">
+                    <strong class="tito2">Accès Neosurf</strong>
+                    <div class="cop" style="background: #FFF9D2;">
+                        <div class="texx">
+                            <center><a href="http://basepronoquinte.com/pop/index.php"  onclick="window.open('http://basepronoquinte.com/pop/index.php', 'newwindow', 'width=430,height=698'); return false;"><img src="pop/neos.png" style="width:100%;" /></a></center>
+                        </div>
+                    </div>
+                    <strong class="tito2">Accès Allopaass</strong>
+                    <div class="cop" style="background: #FFF9D2;">
+                        <div class="texx">
+                            <center>
+                                <h3>Accès Allopass</h3> <br> <!-- Begin Allopass Checkout-Button Code -->
+                                <script type="text/javascript" src="https://payment.allopass.com/buy/checkout.apu?ids=355162&idd=1549833&lang=fr"></script>
+                                <noscript>
+                                    <a href="https://payment.allopass.com/buy/buy.apu?ids=355162&idd=1549833" style="border:0">
+                                        <img src="https://payment.allopass.com/static/buy/button/fr/162x56.png" style="border:0" alt="Buy now!" />
+                                    </a>
+                                </noscript>
+                                <!-- End Allopass Checkout-Button Code -->
+                                <form action="https://payment.allopass.com/onetime/access.apu" method="post">
+                                    <input type="hidden" name="ids" value="355162" />
+                                    <input type="hidden" name="idd" value="1549833" />
+                                    <div>Enter your access code</div>
+                                    <input type="text" name="code[]" />
+                                    <input type="button" name="APsub" value="" onclick="this.form.submit();this.form.APsub.disabled=true;" style="border:0px;margin:0px;padding:0px;width:48px;height:18px;background:url('https://payment.allopass.com/imgweb/common/bt_ok.gif');" />
+                                </form>
+                            </center>
+                        </div>
+                    </div>
+                    <strong class="tito2">Les partenires</strong>
+                    <div class="cop" style="background:#FFF9D2;">
+                        <div class="texx">
+                            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=22" target="_blank" class="si"><img src="http://le-republicain-lorrain.oturf.net/le-republicain-lorrain.gif" style="width:100%; margin-bottom:7px;"></a>
+				
+				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=21" target="_blank" class="si"><img src="http://lemagicienduturf.proquinte.com/le-magicien-du-turf.gif" style="width:100%; margin-bottom:7px;"></a>
+				
+				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=20" target="_blank" class="si"><img src="http://le-dauphine-libere.proquinte.com/le-dauphine-libere.gif" style="width:100%; margin-bottom:7px;"></a>
+				
+				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=19" target="_blank" class="si"><img src="http://statquinte.oturf.net/statquinte.gif" style="width:100%; margin-bottom:7px;"></a>
+				
+				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=18" target="_blank" class="si"><img src="http://pronodirect.oturf.net/pronodirect.gif" style="width:100%; margin-bottom:7px;"></a>
+                        </div>
+                    </div>
+                    <strong class="tito">Nos partenaires</strong>
+                    <div class="cop">
+                        basepronoquinte.com est en partenariat avec des experts du pronostics hippiques. <br>
+                        <div class="bana">
+                            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=2" target="_blank" class="si"><img src="http://avantlacourse.proquinte.com/avantlacourse.gif" alt=""></a>
+					
+					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=3" target="_blank" class="si"><img src="http://marleneturf.proquinte.com/marleneturf.gif" alt=""></a>
+					
+					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=4" target="_blank" class="si"><img src="http://ecartzero.oturf.net/ecartzero.gif" alt=""></a>
+					
+					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=5" target="_blank" class="si"><img src="http://europe1.oturf.net/europe1.gif" alt=""></a>
+					
+					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=6" target="_blank" class="si"><img src="http://genycourses.proquinte.com/genycourses.gif" alt=""></a>
+					
+					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=7" target="_blank" class="si"><img src="http://turfez.net/turfez.gif" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pan_right">
+                    <strong class="tito">ARCHIVES DES PRONOSTICS</strong>
+                    <div class="cop shad2">
+                        <div class="ano">
+                            <div class="prono shad2">
+                                <span> <i>Pronostics</i> Pronostic Quinté+ du Mercredi 22 Fevrier 2023 à Cagnes-sur-Mer – Prix Jacques Géliot </span>
+                                <div class="in">
+                                    <strong class="qui" style="background:#FF9900;">Couplé</strong>
+						            <div class="num_pac">
+							          <b>15</b> <b>2</b> <b>1</b><b>5</b>
+						            </div>
+						            <strong class="qui">Quinté+</strong>
+						            <div class="num_pac">
+							           <b>15</b> <b>2</b> <b>1</b><b>5</b> <b>7</b> <b>3</b><b>4</b>
+						            </div>
+						            <strong class="qui" style="background:#CA0000;">Arrivée</strong>
+						            <div class="num_pac">
+							             <b>15</b> <b>2</b> <b>1</b><b>5</b> <b>7</b>
+						            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pan_left">
+                    <a href="http://www.root-top.com/topsite/zetop/in.php?ID=152"><img src="http://img.root-top.com/topsite/zetop/banner.gif" border="0" alt="basepronoquinte" title="basepronoquinte" style="width: 100%;"><br /></a>
+                    <strong class="tito">Accès pronostics</strong>
+                    <div class="cop" style="background:#FFF9D2;">
+                        <form action="pronostic.php" method="post">
+							<div class="inin">
+								<p class="adv">Entrez votre code d'accès et mot de passe pour accéder aux pronostics</p>
+								<input type="text" name="login" placeholder="Code d'acces" />
+								<input type="password" name="passw" placeholder="Mot de passe" />
+							</div>
+							<center><button style="border:0px;" class="raisedButton">Accéder</button></center>
+						</form>
+                        <strong class="tito">Contactez-nous</strong>
+					   <div class="cop" style="background:#FFF9D2;">
+						 <center> 
+							<b>&#9993; Email:</b> <br /> service@basepronoquinte.com <br>
+							<b>&#9742; Europe(Tel & Watshapp):</b> <br> 0033 679 386 308 <br>
+							<b>&#9742; Afrique(Tel):</b> <br> 00226 65 96 96 11 <br>
+						  </center>
+                         </div>
+                          <!--<a href="https://play.google.com/store/apps/details?id=com.afroafrica.africacourse" target="_blank"><img src="img/bannera.png" style="width:100%; margin-bottom:6px;" /></a>-->
+					       <strong class="tito">Abonnement</strong>
+                           <div class="cop">Pour vous abonner, c'est tout simple. Veuillez nous écrire en précisant la période d'abonnement
+                               <center><a href="abonnement.php" class="raisedButton">Abonnez-vous</a></center>
+                           </div>
+                           <strong class="tito">Ils nous suivent</strong>
+                           <div class="cop">
+                            <center><script type="text/javascript" src="//widget.supercounters.com/ssl/flag.js"></script><script type="text/javascript">sc_flag(1554219,"FFFFFF","000000","cccccc",2,14,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript></center>
+                            <style>
+                                .pan_left .pix_car3{display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 0px; background:blue ; grid-gap: 5px;}
+                                .pan_left .pix_car3 a{display: block; padding: 0px;}
+                                .pan_left .pix_car3 a img{width: 100%; height: 52px;}
+                            </style>
+                            <div class="pix_car3">
+                                <a href="http://www.root-top.com/topsite/bettop/in.php?ID=49"><img src="http://img.root-top.com/topsite/bettop/banner.gif" alt="bet top" title="bet top" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/minarik/in.php?ID=82"><img src="http://img.root-top.com/topsite/minarik/banner.gif" alt="minarik" title="minarik" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/turfbase/in.php?ID=544"> <img src="http://img.root-top.com/topsite/turfbase/banner.gif" alt="top site turf base" title="top site turf base" border="0" /></a>
+                                
+                                <a href="http://www.root-top.com/topsite/pmuturf/in.php?ID=403"> <img src="http://img.root-top.com/topsite/pmuturf/banner.gif" alt="pmu turf" title="pmu turf" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/jmpep80top/in.php?ID=1036"> <img src="http://img.root-top.com/topsite/jmpep80top/banner.gif" alt="jmpep80top" title="jmpep80top" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/classement_general/in.php?ID=2171"> <img src="http://img.root-top.com/topsite/classement_general/banner.gif" alt="classement general root top com" title="classement general root top com" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/topturfjs/in.php?ID=1798"> <img src="http://img.root-top.com/topsite/topturfjs/banner.gif" alt="topturfjs" title="topturfjs" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/baseprono/in.php?ID=259"> <img src="http://img.root-top.com/topsite/baseprono/banner.gif" alt="base prono" title="base prono" border="0" /> </a>
+                                <a href="http://www.root-top.com/topsite/tofturf/in.php?ID=907"> <img src="http://img.root-top.com/topsite/tofturf/banner.gif" alt="tof turf" title="tof turf" border="0" /> </a>
+                                <a href="http://www.root-top.com/topsite/turfoscope/in.php?ID=557"> <img src="http://img.root-top.com/topsite/turfoscope/banner.gif" alt="turfoscope" title="turfoscope" border="0" /></a>
+                                <a href="http://www.root-top.com/topsite/bettop/in.php?ID=49"> </a>	
+                            </div>
+            
+                           </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="foot">
+        <div class="inx">
+            <div class="in">
+                <a href="" style="">Accueil</a>
+                <a href="">Pronostics</a>
+                <a href="">Abonnement</a>
+                <a href="">Archives</a>
+                <a href="">Contact</a>
+                <h5>basepronoquinte.com &copy; Tous les droits sont réservés 2018 | <br /> Annuaire des sites de pronostics hipiques | Email: service@basepronoquinte.com <a href="https://mail12.lwspanel.com/webmail/" target="_blank">WEBMAIL</a> </h5>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
