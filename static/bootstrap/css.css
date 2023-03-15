@@ -20,7 +20,7 @@
 
 body{background: url(../img/ba.png) no-repeat top center fixed  #000000 ; background-size:100%; }
 
-.inx{margin: auto; width: 1110px; background: ; }
+.inx{margin: auto; width: 1110px; }
 
 .succes{padding:15px; background:#F1FFD9; color:#5B9300; font-size:20px; text-align:center;}
 .succes a{display:inline-block; padding:8px; font-size:15px; background:#A8D850; margin-top:10px; border-radius:4px; color:white; transition:background 0.4s;}
@@ -28,11 +28,11 @@ body{background: url(../img/ba.png) no-repeat top center fixed  #000000 ; backgr
 
 marquee{font-family: 'bd';}
 
-.top{ position: fixed; width: 100%; z-index: 20;}
+.top{ position: fixed; width: 100%; z-index: 20;background-color: red; }
 .sep{height: 80px;}
-.top .in{border: solid 1px #096A06; overflow: auto; background: url(../img/men.png) repeat-x #E6B900; background-size:100% 100%; border-radius: 0px 0px 5px 5px; overflow: hidden; margin-bottom: 20px;}
+.top .in{border: solid 1px #096A06; overflow: auto; background: url(../img/men.png) repeat-x #0c00e6; background-size:100% 100%; border-radius: 0px 0px 5px 5px; overflow: hidden; margin-bottom: 20px;}
 .top h1{font-family: 'bd'; font-weight: normal; float: left; background: url(../img/bah.png) no-repeat center top ; background-size:90% 100%; padding: 15px; font-size: 1px; color: white; width: 350px; text-align: center; padding-bottom: 30px; position: absolute;}
-.top h1 a{color:#A03B22;}
+.top h1 a{color:blue;}
 
 .top .menu{ float: right; overflow: auto; padding: 15px;}
 .top .menu a{ border-radius: 3px; float: left; font-family: 'bd'; display: block; float: left; padding: 8px; color: #FFFD80; font-size: 14px; text-transform: uppercase; margin-left: 5px; padding-left: 20px; padding-right: 20px; transition:background 0.4s; }
@@ -74,8 +74,8 @@ marquee{font-family: 'bd';}
 
 .spla{background: /*url(../img/cag.png) no-repeat center center */; background-size: 100% auto;}
 
-.tito{ border:solid 1px #096A06; background: url(../img/men.png) repeat-x #E6B900; background-size:auto 100%; padding: 16px; display: block; font-weight: normal; text-transform: uppercase; color: white; font-size: 14px; font-family: 'bd'; text-align: center; border-radius: 8px 8px 0px 0px;}
-.tito2{border:solid 1px #096A06; background: url(../img/li2.png) repeat-x gray; background-size:auto 100%; padding: 16px; display: block; font-weight: normal; text-transform: uppercase; color: white; font-size: 14px; font-family: 'bd'; text-align: center; border-radius: 8px 8px 0px 0px;}
+.tito{ border:solid 1px white; background: url(../img/men.png) repeat-x blue; background-size:auto 100%; padding: 16px; display: block; font-weight: normal; text-transform: uppercase; color: white; font-size: 14px; font-family: 'bd'; text-align: center; border-radius: 8px 8px 0px 0px;}
+.tito2{border:solid 1px white; background: url(../img/li2.png) repeat-x blue; background-size:auto 100%; padding: 16px; display: block; font-weight: normal; text-transform: uppercase; color: white; font-size: 14px; font-family: 'bd'; text-align: center; border-radius: 8px 8px 0px 0px;}
 
 .cop{padding: 20px; background: white; margin-bottom: 15px; border: solid 1px #096A06;}
 
@@ -96,7 +96,7 @@ marquee{font-family: 'bd';}
 .bana img{width: 100%;}
 
 .foot{}
-.foot .in{ border-radius: 13px 13px 0px 0px; overflow: auto; padding: 20px; text-align: center; background: url(../img/men.png) repeat-x #F0F0F0; background-size:auto 100%;}
+.foot .in{ border-radius: 13px 13px 0px 0px; overflow: auto; padding: 20px; text-align: center; background: url(../img/men.png) repeat-x blue; background-size:auto 100%;}
 .foot .in a{ color: white; display: inline-block; padding: 8px; border-radius: 8px; font-size: 12px;}
 .foot .in h5{ color: white; display: padding: 8px; border-radius: 8px; font-size: 13px;}
 

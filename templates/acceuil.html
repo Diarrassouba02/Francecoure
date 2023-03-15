@@ -5,182 +5,336 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>acceuil</title>
     <link href="{% static 'bootstrap/css.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="top">
         <div class="inx">
-           <div class="in">
-               <h1> <a href="index.php"><img src="img/logo.png" alt=""> <br></a> </h1>
-               <div class="menu">
-                   <a href="index.php" style="background-color: white;">Accueil</a>
-                   <a href="acces_prono.php">Pronostics</a>
-                   <a href="abonnement.php">Abonnement</a>
-                   <a href="archive.php">Archives</a>
-                   <a href="contact.php">Contact</a>
-               </div>
-           </div>
-       </div>
+            <div class="in">
+                <h1> <a href="{% url 'acceuil' %}"><img src="{% static 'bootstrap/francecourse.png' %}" alt=""> <br></a> </h1>
+                <div class="menu">
+                    <a href="{% url 'acceuil' %}" style="color: white;">Accueil</a>
+                    <a href="{% url 'pronostics' %}">Pronostics</a>
+                    <a href="{% url 'abonnement' %}">Abonnement</a>
+                    <a href="{% url 'archive' %}">Archives</a>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="sep"></div>
+    <div class="slide">
+        <div class="inx">
+            <div class="ino">
+                <div class="pro_pan">
+					<div class="spla">
+						<img src="{% static 'bootstrap/acceuil.png' %}" style="width: 60%;">
+												
+					</div>
+                </div>
+                <div class="date_pan">
+                    <div class="pad">
+						<center><strong>Pronostics abonnés</strong></center>
+						  
+							
+							<center><div class="datee">Pronostic Quinté+ du Lundi 06 Mars 2023 à Caen –Prix de Saint-Etienne</div></center>
+							                        <center><a href="" class="raisedButton">ACCES AUX PRONOSTICS DU JOUR</a></center>
+                    </div>
+                    <div class="pad"> 
+						  
+                        <center><strong>Le Duel du jour</strong></center>
+                       <center><div class="datee">Pronostic Quinté+ du Lundi 06 Mars 2023 à Caen –Prix de Saint-Etienne</div></center>
+                       <div class="po_po"><b>5</b> &nbsp;&nbsp;&nbsp; <b>14</b></div>
+                       
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="content">
         <div class="inx">
             <div class="in">
                 <div class="pan_left">
-                    <strong class="tito2">Accès Neosurf</strong>
-                    <div class="cop" style="background: #FFF9D2;">
+                    <strong class="tito2">Payer avec Neosurf</strong>
+                    <div class="cop" style="background:white;">
                         <div class="texx">
-                            <center><a href="http://basepronoquinte.com/pop/index.php"  onclick="window.open('http://basepronoquinte.com/pop/index.php', 'newwindow', 'width=430,height=698'); return false;"><img src="pop/neos.png" style="width:100%;" /></a></center>
+                            <center><a href="http://basepronoquinte.com/pop/index.php"  onclick="window.open('http://basepronoquinte.com/pop/index.php', 'width=430,height=698'); return false;"><img src="{% static 'bootstrap/neosurf.png' %}" style="width:100%;" /></a></center>
                         </div>
                     </div>
                     <strong class="tito2">Accès Allopaass</strong>
-                    <div class="cop" style="background: #FFF9D2;">
+                    <div class="cop" style="background:white;">
                         <div class="texx">
                             <center>
-                                <h3>Accès Allopass</h3> <br> <!-- Begin Allopass Checkout-Button Code -->
-                                <script type="text/javascript" src="https://payment.allopass.com/buy/checkout.apu?ids=355162&idd=1549833&lang=fr"></script>
-                                <noscript>
-                                    <a href="https://payment.allopass.com/buy/buy.apu?ids=355162&idd=1549833" style="border:0">
-                                        <img src="https://payment.allopass.com/static/buy/button/fr/162x56.png" style="border:0" alt="Buy now!" />
-                                    </a>
-                                </noscript>
-                                <!-- End Allopass Checkout-Button Code -->
-                                <form action="https://payment.allopass.com/onetime/access.apu" method="post">
-                                    <input type="hidden" name="ids" value="355162" />
-                                    <input type="hidden" name="idd" value="1549833" />
-                                    <div>Enter your access code</div>
-                                    <input type="text" name="code[]" />
-                                    <input type="button" name="APsub" value="" onclick="this.form.submit();this.form.APsub.disabled=true;" style="border:0px;margin:0px;padding:0px;width:48px;height:18px;background:url('https://payment.allopass.com/imgweb/common/bt_ok.gif');" />
-                                </form>
-                            </center>
-                        </div>
-                    </div>
-                    <strong class="tito2">Les partenires</strong>
-                    <div class="cop" style="background:#FFF9D2;">
-                        <div class="texx">
-                            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=22" target="_blank" class="si"><img src="http://le-republicain-lorrain.oturf.net/le-republicain-lorrain.gif" style="width:100%; margin-bottom:7px;"></a>
-				
-				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=21" target="_blank" class="si"><img src="http://lemagicienduturf.proquinte.com/le-magicien-du-turf.gif" style="width:100%; margin-bottom:7px;"></a>
-				
-				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=20" target="_blank" class="si"><img src="http://le-dauphine-libere.proquinte.com/le-dauphine-libere.gif" style="width:100%; margin-bottom:7px;"></a>
-				
-				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=19" target="_blank" class="si"><img src="http://statquinte.oturf.net/statquinte.gif" style="width:100%; margin-bottom:7px;"></a>
-				
-				            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=18" target="_blank" class="si"><img src="http://pronodirect.oturf.net/pronodirect.gif" style="width:100%; margin-bottom:7px;"></a>
-                        </div>
-                    </div>
-                    <strong class="tito">Nos partenaires</strong>
-                    <div class="cop">
-                        basepronoquinte.com est en partenariat avec des experts du pronostics hippiques. <br>
-                        <div class="bana">
-                            <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=2" target="_blank" class="si"><img src="http://avantlacourse.proquinte.com/avantlacourse.gif" alt=""></a>
+                                  <h3>Accès Allopass</h3> <br> <!-- Begin Allopass Checkout-Button Code -->
+                <script type="text/javascript" src="https://payment.allopass.com/buy/checkout.apu?ids=355162&idd=1549833&lang=fr"></script>
+                <noscript>
+                      <a href="https://payment.allopass.com/buy/buy.apu?ids=355162&idd=1549833" style="border:0">
+                        <img src="https://payment.allopass.com/static/buy/button/fr/162x56.png" style="border:0" alt="Buy now!" />
+                      </a>
+                </noscript>
+                <!-- End Allopass Checkout-Button Code -->
+                    <form action="https://payment.allopass.com/onetime/access.apu" method="post">
+                    <input type="hidden" name="ids" value="355162" />
+                    <input type="hidden" name="idd" value="1549833" />
+                    <div>Enter your access code</div>
+                    <input type="text" name="code[]" />
+                    <input type="button" name="APsub" value="" onclick="this.form.submit();this.form.APsub.disabled=true;" style="border:0px;margin:0px;padding:0px;width:48px;height:18px;background:url('https://payment.allopass.com/imgweb/common/bt_ok.gif');" /></form></center>
+                </div>
+            </div>
+            <strong class="tito2">Nos partenires</strong>
+            <div class="cop" style="background:white;">
+                <div class="texx">      
+                        <a href="http://lemagicienduturf.proquinte.com/" target="_blank" class="si"><img src="http://lemagicienduturf.proquinte.com/le-magicien-du-turf.gif" style="width:100%; margin-bottom:7px;"></a>
+                        
+                        <a href="http://le-dauphine-libere.proquinte.com/" target="_blank" class="si"><img src="http://le-dauphine-libere.proquinte.com/le-dauphine-libere.gif" style="width:100%; margin-bottom:7px;"></a>
+                </div>
+             </div>
+             <strong class="tito">Nos partenaires</strong>
+             <div class="cop">
+                 basepronoquinte.com est en partenariat avec des experts du pronostics hippiques. <br>
+                 <div class="bana">
+                      
+                            <a href="http://avantlacourse.proquinte.com/" target="_blank" class="si"><img src="http://avantlacourse.proquinte.com/avantlacourse.gif" alt=""></a>
+                            <a href="http://marleneturf.proquinte.com/" target="_blank" class="si"><img src="http://marleneturf.proquinte.com/marleneturf.gif" alt=""></a>
+                            <a href="http://genycourses.proquinte.com/" target="_blank" class="si"><img src="http://genycourses.proquinte.com/genycourses.gif" alt=""></a>
+                            <a href="http://turfez.net/" target="_blank" class="si">               <img src="http://turfez.net/turfez.gif" alt=""></a>
+                                         
+                 </div>
+              </div>
+            </div>
+            <div class="pan_right">
+                <a href="http://basepronoquinte.com/" target="_blank"><img src="{% static 'bootstrap/acceuil.png' %}" style="width:100%; margin-bottom:7px;" /></a>
+                <strong class="tito">Les sites hippiques les plus visités</strong> 
+                <div class="site">
+                    <div class="ico"><a href="" target="_blank"><img src="http://avantlacourse.proquinte.com/avantlacourse.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>avantlacourse <div class="vis"><i>visites</i><em>&nbsp; 139636 &nbsp;</em></div></strong>
+							<p>Avantlacourse est la plateforme idéale des pronostics hippiques qui vous permettent de gagner à coup sûr. Abonnez-vous dès maintenant. <a href="http://avantlacourse.proquinte.com/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+                    <div class="site">
+                        <div class="ico"><a href="http://ww7.oturf.net/" target="_blank"><img src="http://le-republicain-lorrain.oturf.net/le-republicain-lorrain.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>le-republicain-lorrain <div class="vis"><i>visites</i><em>&nbsp; 97985 &nbsp;</em></div></strong>
+							<p>Le-republicain-lorrain est votre compagnon hippique qui vous garantit la victoire à coup sûr. Abonnez-vous maintenant. <a href="http://ww7.oturf.net/">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+                    <div class="site">
+                        <div class="ico"><a href="http://lemagicienduturf.proquinte.com/" target="_blank"><img src="http://lemagicienduturf.proquinte.com/le-magicien-du-turf.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>lemagicien-duturf <div class="vis"><i>visites</i><em>&nbsp; 85479 &nbsp;</em></div></strong>
+							<p>le-magicien-du-turf est votre lanterne dans le monde des combinaisons hippiques .Il va changer votre vie à coup sûr. <a href="http://lemagicienduturf.proquinte.com/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					<div class="site">
+                        <div class="ico"><a href="http://le-dauphine-libere.proquinte.com/" target="_blank"><img src="http://le-dauphine-libere.proquinte.com/le-dauphine-libere.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>le-dauphine-libere <div class="vis"><i>visites</i><em>&nbsp; 73170 &nbsp;</em></div></strong>
+							<p>le-dauphine-libere est la nouvelle référence en matière de pronostics hippiques du Quinté+. Suivez-nous et gagnez chaque jour. <a href="http://le-dauphine-libere.proquinte.com/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+                    <div class="site">
+                        <div class="ico"><a href="http://pronodirect.oturf.net/" target="_blank"><img src="http://pronodirect.oturf.net/pronodirect.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>pronodirect <div class="vis"><i>visites</i><em>&nbsp; 51566 &nbsp;</em></div></strong>
+							<p>Pronodirect vous éclaircit sur les combinaisons gagnantes des pronostics du Quinté+. Il est temps de vous engager! <a href="" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+                    <div class="site">
+						<div class="ico"><a href="http://marleneturf.proquinte.com/" target="_blank"><img src="http://marleneturf.proquinte.com/marleneturf.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>marleneturf <div class="vis"><i>visites</i><em>&nbsp; 38744 &nbsp;</em></div></strong>
+							<p>Marleneturf est un site de pronostics hippiques des course du Quinté+. Vous découvrez chaque jour les formules et combinaisons qui vous font gagner. <a href="http://marleneturf.proquinte.com/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
 					
-					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=3" target="_blank" class="si"><img src="http://marleneturf.proquinte.com/marleneturf.gif" alt=""></a>
+					<div class="site">
+						<div class="ico"><a href="http://statquinte.oturf.net/statquinte" target="_blank"><img src="http://statquinte.oturf.net/statquinte.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>statquinte <div class="vis"><i>visites</i><em>&nbsp; 38379 &nbsp;</em></div></strong>
+							<p>Statquinte vous épargne les prises de tête avant les courses hippiques. Le Quinté+ sera plus que jamais clair pour vous. <a href="http://statquinte.oturf.net/statquinte" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
 					
-					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=4" target="_blank" class="si"><img src="http://ecartzero.oturf.net/ecartzero.gif" alt=""></a>
+					<div class="site">
+						<div class="ico"><a href="http://genycourses.proquinte.com/" target="_blank"><img src="http://genycourses.proquinte.com/genycourses.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>genycourses <div class="vis"><i>visites</i><em>&nbsp; 35050 &nbsp;</em></div></strong>
+							<p>Genycourses vous ouvre les yeux sur le monde hippique et les combinaisons gagnantes. Abonnez-vous et bénéficiez des meilleurs pronostics. <a href="http://genycourses.proquinte.com/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
 					
-					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=5" target="_blank" class="si"><img src="http://europe1.oturf.net/europe1.gif" alt=""></a>
+					<div class="site">
+						<div class="ico"><a href="http://europe1.oturf.net/"><img src="http://europe1.oturf.net/europe1.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>europe1 <div class="vis"><i>visites</i><em>&nbsp; 32183 &nbsp;</em></div></strong>
+							<p>Europe1 vous permet de changer de vie. Comment? par les pronostics hippiques du Quinté+. Victoire assurée ! essayez maintenant. <a href="http://europe1.oturf.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
 					
-					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=6" target="_blank" class="si"><img src="http://genycourses.proquinte.com/genycourses.gif" alt=""></a>
+					<div class="site">
+						<div class="ico"><a href="http://ecartzero.oturf.net/" target="_blank"><img src="http://ecartzero.oturf.net/ecartzero.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>ecartzero <div class="vis"><i>visites</i><em>&nbsp; 26957 &nbsp;</em></div></strong>
+							<p>La justesse des pronostics hippiques du Quinté+ a désormais une adresse: ecartzero. La garantie de réussir à coup sûr dans vos paris hippiques. <a href="http://ecartzero.oturf.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
 					
-					        <a href="djshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdddjshjjkwkjshjdhsjbwbhgkjdhjhdskhkdhshkdshkgjgdhshhjsgjdd.php?tic=7" target="_blank" class="si"><img src="http://turfez.net/turfez.gif" alt=""></a>
+					<div class="site">
+						<div class="ico"><a href="" target="_blank"><img src="http://turfez.net/turfez.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>turfez <div class="vis"><i>visites</i><em>&nbsp; 25027 &nbsp;</em></div></strong>
+							<p>Turfez se démarques des autres sites de pronostics hippiques du Quinté+ par la justesse et l'analyse pointue de ses combinaisons.  <a href="http://turfez.net/turfez.gif" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://ticson.turfez.net/" target="_blank"><img src="http://ticson.turfez.net/ticson.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>ticson <div class="vis"><i>visites</i><em>&nbsp; 23598 &nbsp;</em></div></strong>
+							<p>Les pronostics des courses hippiques n'ont désormais plus de secret pour vous avec ticson. Découvrez maintennt. <a href="http://ticson.turfez.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://proquinte.com/" target="_blank"><img src="http://proquinte.com/proquinte.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>proquinte <div class="vis"><i>visites</i><em>&nbsp; 23339 &nbsp;</em></div></strong>
+							<p>Les pronostics de proquinte vous garantissent la victoire au quotidien dans vos paris hippiques. Essaye dès maintenant. <a href="http://proquinte.com/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://marseilleturf.turfez.net/" target="_blank"><img src="http://marseilleturf.turfez.net/marseilleturf.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>marseilleturf <div class="vis"><i>visites</i><em>&nbsp; 23102 &nbsp;</em></div></strong>
+							<p>Marseille est votre boussole du monde hippiques. Chaque jour visitez le pour avoir toutes les combinaisons qui vous rendent riche. <a href="http://marseilleturf.turfez.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://topturf.turfez.net/"><img src="http://topturf.turfez.net/topturf.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>topturf <div class="vis"><i>visites</i><em>&nbsp; 23097 &nbsp;</em></div></strong>
+							<p>Topturf: c'est des pronostics, rien que des pronostics hippiques qui font gagner chaque jour. Il est temps de vous abonner. <a href="http://topturf.turfez.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://leveinard.turfez.net/" target="_blank"><img src="http://leveinard.turfez.net/leveinard.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>leveinard <div class="vis"><i>visites</i><em>&nbsp; 23094 &nbsp;</em></div></strong>
+							<p>Etre veinard ne se résume plus à la chance. Leveinard est le compagnon idéal pour vos pronostics du Quinté+ 7j/7. <a href="http://leveinard.turfez.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://pronobanco.proquinte.com" target="_blank"><img src="http://pronobanco.proquinte.com/pronobanco.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>pronobanco <div class="vis"><i>visites</i><em>&nbsp; 23092 &nbsp;</em></div></strong>
+							<p>Les pronostics toujours et à jour qui vous font gagner des millions : c'est sur pronobanco. Ne vous aventurez plus les yeux fermés. <a href="http://pronobanco.proquinte.com" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://turfomania.turfez.net/" target="_blank"><img src="http://turfomania.turfez.net/turfomania.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>turfomania <div class="vis"><i>visites</i><em>&nbsp; 23090 &nbsp;</em></div></strong>
+							<p>Folie des pronostics qui gagnent à coup sûr : c'est sur turfomania. Chaque jour vous repartirez avec les grosses cagnottes hippique. <a href="http://turfomania.turfez.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://oturf.net/" target="_blank"><img src="http://oturf.net/oturf.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>oturf <div class="vis"><i>visites</i><em>&nbsp; 21347 &nbsp;</em></div></strong>
+							<p>Oturf est une plateforme de pronostics des courses hippiques qui réunit des experts du domaine. Le Quinté+ décortiqué en plusieurs combinaisons. <a href="http://oturf.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+					
+					<div class="site">
+						<div class="ico"><a href="http://turfpronos.oturf.net/" target="_blank"><img src="http://turfpronos.oturf.net/turfpronos.gif" alt="" /></a></div>
+						<div class="texto">
+							<strong>turfpronos <div class="vis"><i>visites</i><em>&nbsp; 21346 &nbsp;</em></div></strong>
+							<p>Les meilleurs pronostics sont désormais sur votre site de pronostics turfpronos. C'est à vous de gagner maintenant! <a href="http://turfpronos.oturf.net/" target="_blank">[ visiter le site ]</a> </p>
+						</div>
+					</div> <hr />
+                </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="pan_right">
-                    <strong class="tito">ARCHIVES DES PRONOSTICS</strong>
-                    <div class="cop shad2">
-                        <div class="ano">
-                            <div class="prono shad2">
-                                <span> <i>Pronostics</i> Pronostic Quinté+ du Mercredi 22 Fevrier 2023 à Cagnes-sur-Mer – Prix Jacques Géliot </span>
-                                <div class="in">
-                                    <strong class="qui" style="background:#FF9900;">Couplé</strong>
-						            <div class="num_pac">
-							          <b>15</b> <b>2</b> <b>1</b><b>5</b>
-						            </div>
-						            <strong class="qui">Quinté+</strong>
-						            <div class="num_pac">
-							           <b>15</b> <b>2</b> <b>1</b><b>5</b> <b>7</b> <b>3</b><b>4</b>
-						            </div>
-						            <strong class="qui" style="background:#CA0000;">Arrivée</strong>
-						            <div class="num_pac">
-							             <b>15</b> <b>2</b> <b>1</b><b>5</b> <b>7</b>
-						            </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pan_left">
-                    <a href="http://www.root-top.com/topsite/zetop/in.php?ID=152"><img src="http://img.root-top.com/topsite/zetop/banner.gif" border="0" alt="basepronoquinte" title="basepronoquinte" style="width: 100%;"><br /></a>
+        <div class="pan_left">
+            <a href="http://www.root-top.com/topsite/zetop/in.php?ID=152"><img src="http://img.root-top.com/topsite/zetop/banner.gif" border="0" alt="basepronoquinte" title="basepronoquinte" style="width: 100%;"><br /></a>
                     <strong class="tito">Accès pronostics</strong>
-                    <div class="cop" style="background:#FFF9D2;">
-                        <form action="pronostic.php" method="post">
-							<div class="inin">
-								<p class="adv">Entrez votre code d'accès et mot de passe pour accéder aux pronostics</p>
-								<input type="text" name="login" placeholder="Code d'acces" />
-								<input type="password" name="passw" placeholder="Mot de passe" />
-							</div>
-							<center><button style="border:0px;" class="raisedButton">Accéder</button></center>
-						</form>
-                        <strong class="tito">Contactez-nous</strong>
-					   <div class="cop" style="background:#FFF9D2;">
-						 <center> 
+            <div class="cop" style="background:white;">
+                <form action="pronostic.php" method="post">
+                    <div class="inin">
+                        <p class="adv">Entrez votre code d'accès et mot de passe pour accéder aux pronostics</p>
+                        <input type="text" name="login" placeholder="Code d'acces" />
+                        <input type="password" name="passw" placeholder="Mot de passe" />
+                    </div>
+                    <center><button style="border:0px;" class="raisedButton">Accéder</button></center>
+                </form>
+            </div>
+            <strong class="tito">Contactez-nous</strong>
+					<div class="cop" style="background:white;">
+						<center> 
 							<b>&#9993; Email:</b> <br /> service@basepronoquinte.com <br>
 							<b>&#9742; Europe(Tel & Watshapp):</b> <br> 0033 679 386 308 <br>
 							<b>&#9742; Afrique(Tel):</b> <br> 00226 65 96 96 11 <br>
-						  </center>
-                         </div>
-                          <!--<a href="https://play.google.com/store/apps/details?id=com.afroafrica.africacourse" target="_blank"><img src="img/bannera.png" style="width:100%; margin-bottom:6px;" /></a>-->
-					       <strong class="tito">Abonnement</strong>
-                           <div class="cop">Pour vous abonner, c'est tout simple. Veuillez nous écrire en précisant la période d'abonnement
-                               <center><a href="abonnement.php" class="raisedButton">Abonnez-vous</a></center>
-                           </div>
-                           <strong class="tito">Ils nous suivent</strong>
-                           <div class="cop">
-                            <center><script type="text/javascript" src="//widget.supercounters.com/ssl/flag.js"></script><script type="text/javascript">sc_flag(1554219,"FFFFFF","000000","cccccc",2,14,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript></center>
-                            <style>
-                                .pan_left .pix_car3{display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 0px; background:blue ; grid-gap: 5px;}
-                                .pan_left .pix_car3 a{display: block; padding: 0px;}
-                                .pan_left .pix_car3 a img{width: 100%; height: 52px;}
-                            </style>
-                            <div class="pix_car3">
-                                <a href="http://www.root-top.com/topsite/bettop/in.php?ID=49"><img src="http://img.root-top.com/topsite/bettop/banner.gif" alt="bet top" title="bet top" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/minarik/in.php?ID=82"><img src="http://img.root-top.com/topsite/minarik/banner.gif" alt="minarik" title="minarik" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/turfbase/in.php?ID=544"> <img src="http://img.root-top.com/topsite/turfbase/banner.gif" alt="top site turf base" title="top site turf base" border="0" /></a>
-                                
-                                <a href="http://www.root-top.com/topsite/pmuturf/in.php?ID=403"> <img src="http://img.root-top.com/topsite/pmuturf/banner.gif" alt="pmu turf" title="pmu turf" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/jmpep80top/in.php?ID=1036"> <img src="http://img.root-top.com/topsite/jmpep80top/banner.gif" alt="jmpep80top" title="jmpep80top" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/classement_general/in.php?ID=2171"> <img src="http://img.root-top.com/topsite/classement_general/banner.gif" alt="classement general root top com" title="classement general root top com" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/topturfjs/in.php?ID=1798"> <img src="http://img.root-top.com/topsite/topturfjs/banner.gif" alt="topturfjs" title="topturfjs" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/baseprono/in.php?ID=259"> <img src="http://img.root-top.com/topsite/baseprono/banner.gif" alt="base prono" title="base prono" border="0" /> </a>
-                                <a href="http://www.root-top.com/topsite/tofturf/in.php?ID=907"> <img src="http://img.root-top.com/topsite/tofturf/banner.gif" alt="tof turf" title="tof turf" border="0" /> </a>
-                                <a href="http://www.root-top.com/topsite/turfoscope/in.php?ID=557"> <img src="http://img.root-top.com/topsite/turfoscope/banner.gif" alt="turfoscope" title="turfoscope" border="0" /></a>
-                                <a href="http://www.root-top.com/topsite/bettop/in.php?ID=49"> </a>	
-                            </div>
-            
-                           </div>
+						</center>
                     </div>
+                    <strong class="tito">Abonnement</strong>
+                    <div class="cop">Pour vous abonner, c'est tout simple. Veuillez nous écrire en précisant la période d'abonnement
+                        <center><a href="{% url 'abonnement' %}" class="raisedButton">Abonnez-vous</a></center>
+                    </div>
+                    <strong class="tito">Ils nous suivent</strong>
+                    <div class="cop">
+					<!-- BEGIN: Powered by Supercounters.com -->
+                    <center>
+                        <script type="text/javascript" src="//widget.supercounters.com/ssl/flag.js"></script><script type="text/javascript">sc_flag(1554219,"FFFFFF","000000","cccccc",2,14,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript>
+                    </center>
                 </div>
-                </div>
-            </div>
-        </div>
-    </div> 
+                <style>
+                    .pan_left .pix_car3{display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 0px;  grid-gap: 5px;}
+                    .pan_left .pix_car3 a{display: block; padding: 0px;}
+                    .pan_left .pix_car3 a img{width: 100%; height: 52px;}
+                </style>
+         <div class="pix_car3">
+            <a href="http://www.root-top.com/topsite/bettop/in.php?ID=49"><img src="http://img.root-top.com/topsite/bettop/banner.gif" alt="bet top" title="bet top" border="0" /></a>
+     
+     	
+            <a href="http://www.root-top.com/topsite/minarik/in.php?ID=82"><img src="http://img.root-top.com/topsite/minarik/banner.gif" alt="minarik" title="minarik" border="0" /></a>
+            <a href="http://www.root-top.com/topsite/turfbase/in.php?ID=544"> <img src="http://img.root-top.com/topsite/turfbase/banner.gif" alt="top site turf base" title="top site turf base" border="0" /></a>
+            
+            <a href="http://www.root-top.com/topsite/pmuturf/in.php?ID=403"> <img src="http://img.root-top.com/topsite/pmuturf/banner.gif" alt="pmu turf" title="pmu turf" border="0" /></a>
+            <a href="http://www.root-top.com/topsite/jmpep80top/in.php?ID=1036"> <img src="http://img.root-top.com/topsite/jmpep80top/banner.gif" alt="jmpep80top" title="jmpep80top" border="0" /></a>
+            <a href="http://www.root-top.com/topsite/classement_general/in.php?ID=2171"> <img src="http://img.root-top.com/topsite/classement_general/banner.gif" alt="classement general root top com" title="classement general root top com" border="0" /></a>
+            <a href="http://www.root-top.com/topsite/topturfjs/in.php?ID=1798"> <img src="http://img.root-top.com/topsite/topturfjs/banner.gif" alt="topturfjs" title="topturfjs" border="0" /></a>
+            <a href="http://www.root-top.com/topsite/baseprono/in.php?ID=259"> <img src="http://img.root-top.com/topsite/baseprono/banner.gif" alt="base prono" title="base prono" border="0" /> </a>
+            <a href="http://www.root-top.com/topsite/tofturf/in.php?ID=907"> <img src="http://img.root-top.com/topsite/tofturf/banner.gif" alt="tof turf" title="tof turf" border="0" /> </a>
+            <a href="http://www.root-top.com/topsite/turfoscope/in.php?ID=557"> <img src="http://img.root-top.com/topsite/turfoscope/banner.gif" alt="turfoscope" title="turfoscope" border="0" /></a>
+            <a href="http://www.root-top.com/topsite/bettop/in.php?ID=49"> </a>
+         </div>
+        </div>          
+    </div>
+</div>
+        
+    </div>
     
-    <div class="foot">
-        <div class="inx">
-            <div class="in">
-                <a href="" style="">Accueil</a>
-                <a href="">Pronostics</a>
-                <a href="">Abonnement</a>
-                <a href="">Archives</a>
-                <a href="">Contact</a>
-                <h5>basepronoquinte.com &copy; Tous les droits sont réservés 2018 | <br /> Annuaire des sites de pronostics hipiques | Email: service@basepronoquinte.com <a href="https://mail12.lwspanel.com/webmail/" target="_blank">WEBMAIL</a> </h5>
+</div> 
+
+            </div>
             </div>
         </div>
     </div>
-    
+    <div class="foot">
+        <div class="inx">
+            <div class="in">
+                <h5>FRANCECOURSES &copy; Tous les droits sont réservés 2023  <br /> Annuaire des sites de pronostics hipiques | Email: francecourses@gmail.com <a href="https://mail12.lwspanel.com/webmail/" target="_blank">WEBMAIL</a> </h5>
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
